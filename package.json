@@ -1,0 +1,34 @@
+{
+  "name": "react-native-headroom",
+  "version": "1.0.0",
+  "description": "A Scrollview with a header which hides when user scrolls down and reappears when user scrolls up",
+  "main": "Headroom.js",
+  "scripts": {
+    "test": "./node_modules/eslint/bin/eslint.js Headroom.js"
+  },
+  "author": "Arthur Brenaut",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abrenaut/react-native-headroom.git"
+  },
+  "keywords": [
+    "ScrollView",
+    "Header",
+    "react-component",
+    "react-native",
+    "ios",
+    "android"
+  ],
+  "bugs": {
+    "url": "https://github.com/abrenaut/react-native-headroom/issues"
+  },
+  "homepage": "https://github.com/abrenaut/react-native-headroom#readme",
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^3.9.0",
+    "eslint-plugin-standard": "^2.0.1"
+  }
+}
