@@ -78,4 +78,4 @@ Any [`ScrollView` property](http://facebook.github.io/react-native/docs/scrollvi
 |---|---|---|
 |**`headerComponent`**|The header component. |*None*|
 |**`headerHeight`**|The header height. |*None*|
-|**`slideDuration`**|How long should the slide animation take. |*None*|
+|**`slideDuration`**|How long should the slide animation take. |400|
