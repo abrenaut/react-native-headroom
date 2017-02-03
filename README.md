@@ -2,13 +2,13 @@
 
 A Scrollview with a header which hides when user scrolls down and reappears when user scrolls up
 
+![](https://raw.githubusercontent.com/abrenaut/react-native-headroom/master/screenshot.gif)
+
 ## Installation
 
 ```npm install react-native-headroom --save```
 
 ## Example
-
-![](https://raw.githubusercontent.com/abrenaut/react-native-headroom/master/screenshot.gif)
 
 ```js
 import React, { Component } from 'react' // eslint-disable-line no-unused-vars
