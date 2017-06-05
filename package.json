@@ -1,6 +1,6 @@
 {
   "name": "react-native-headroom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Scrollview with a header which hides when user scrolls down and reappears when user scrolls up",
   "main": "Headroom.js",
   "scripts": {
