@@ -3,6 +3,7 @@ import {
     Text,
     View,
     StyleSheet,
+    ScrollView,
     AppRegistry,
 } from 'react-native'
 
@@ -20,6 +21,7 @@ export default class HeadroomExample extends Component {
       <View style={[styles.container]}>
         <Headroom
           style={[styles.container]}
+          ScrollableComponent={ScrollView}
           headerComponent={ header }
           headerHeight={ 80 }
           scrollEventThrottle={ 80 }

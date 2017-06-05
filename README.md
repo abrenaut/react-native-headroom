@@ -17,6 +17,7 @@ import {
     View,
     StyleSheet,
     AppRegistry,
+    ScrollView,
 } from 'react-native'
 
 import Headroom from 'react-native-headroom'
@@ -34,6 +35,7 @@ export default class HeadroomExample extends Component {
         <Headroom
           style={[styles.container]}
           headerComponent={ header }
+          ScrollableComponent={ScrollView}
           headerHeight={ 80 }
           scrollEventThrottle={ 80 }
         >
@@ -78,4 +80,5 @@ Any [`ScrollView` property](http://facebook.github.io/react-native/docs/scrollvi
 |---|---|---|
 |**`headerComponent`**|The header component. |*None*|
 |**`headerHeight`**|The header height. |*None*|
+|**`ScrollableComponent`**|The scrollable component class (e.g. ScrollView or ListView). |*None*|
 |**`slideDuration`**|How long should the slide animation take. |400|

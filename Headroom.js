@@ -43,17 +43,17 @@ export default class Headroom extends Component {
   }
 
   render() {
-    const { headerComponent } = this.props
+    const { headerComponent, ScrollableComponent } = this.props
     return (
       <View style={styles.container}>
-        <ScrollView
+        <ScrollableComponent
           onScroll={this._onScroll.bind(this)}
           {...this.props}
         >
           <View style={{marginTop: this.props.headerHeight}}>
             {this.props.children}
           </View>
-        </ScrollView>
+        </ScrollableComponent>
         <Animated.View style={[styles.header, { height: this.state.height }]}>
           {headerComponent}
         </Animated.View>
