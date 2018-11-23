@@ -21,8 +21,13 @@ export default class Headroom extends Component {
   _onScroll(event) {
     const currentOffset = event.nativeEvent.contentOffset.y
 
-    // Ignore scroll events outside the scrollview
-    if (currentOffset < 0 || currentOffset > (event.nativeEvent.contentSize.height - event.nativeEvent.layoutMeasurement.height)) {
+    const scrollOutside =
+      currentOffset < 0 ||
+      currentOffset >
+        event.nativeEvent.contentSize.height -
+          event.nativeEvent.layoutMeasurement.height
+    const scrollUnderHeader = currentOffset <= this.props.headerHeight
+    if (scrollOutside || scrollUnderHeader) {
       return
     }
 
