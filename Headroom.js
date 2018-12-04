@@ -43,7 +43,7 @@ export default class Headroom extends Component {
   _toggleHeader () {
     Animated.timing(this.state.height, {
       duration: this.slideDuration,
-      toValue: this.state.visible ? -this.props.HEADER_HEIGHT : 0
+      toValue: this.state.visible ? -this.props.headerHeight : 0
     }).start()
     this.setState({ visible: !this.state.visible })
   }
