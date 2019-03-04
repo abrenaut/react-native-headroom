@@ -1,9 +1,5 @@
 import React, { Component } from 'react' // eslint-disable-line no-unused-vars
-import {
-  Animated,
-  StyleSheet,
-  View
-} from 'react-native'
+import { Animated, StyleSheet, View } from 'react-native'
 
 export default class Headroom extends Component {
   constructor (props) {
@@ -15,6 +11,14 @@ export default class Headroom extends Component {
     }
     // How long does the slide animation take
     this.slideDuration = this.props.slideDuration || 400
+  }
+
+  componentWillReceiveProps (nextProps) {
+    const { forceVisible } = nextProps
+    if (forceVisible && !this.state.visible) {
+      this.setState({ visible: true })
+      this._toggleHeader()
+    }
   }
 
   _onScroll (event) {
